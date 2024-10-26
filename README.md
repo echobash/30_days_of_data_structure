@@ -20,8 +20,8 @@ Mathematics-based programs to build logic for basic and optimized operations.
 
 | Program Name                                | Description                                        | Status |
 |---------------------------------------------|----------------------------------------------------|--------|
-| `count_no_of_digits.py`                    | Count the number of digits in a number            | [ ]    |
-| `count_no_of_digits_optimized.py`          | Optimized version of counting digits               | [ ]    |
+| `count_no_of_digits.py`                    | Count the number of digits in a number            | [x]    |
+| `count_no_of_digits_optimized.py`          | Optimized version of counting digits               | []    |
 | `gcd.py`                                   | Find the GCD of two numbers                        | [ ]    |
 | `is_a_no_palindrome.py`                     | Check if a number is a palindrome                  | [ ]    |
 | `is_armstrong_no.py`                        | Check if a number is an Armstrong number           | [ ]    |
