@@ -13,10 +13,13 @@ class Hashmap:
         index = self.get_hash(key)
         self.arr[index] = value
 
-
     def get_data(self, key):
         index = self.get_hash(key)
         return self.arr[index]
+
+    def delete(self, key):
+        index = self.get_hash(key)
+        self.arr[index] = None
 
 hash_map = Hashmap()
 hash_map.add('march 6', 200)
@@ -26,4 +29,5 @@ hash_map.add('march 12', 400)
 hash_map.add('feb 11', 400)
 hash_map.add('jan 12', 400)
 hash_map.add('april 13', 400)
+hash_map.delete('april 13')
 print(hash_map.get_data('april 13'))
