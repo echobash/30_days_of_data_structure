@@ -7,7 +7,6 @@ Welcome to my **30 Days of Coding** journey! 🚀 This repository is a collectio
 ---
 
 ## 📜 Table of Contents
-## 📜 Table of Contents
 - [Maths](https://github.com/echobash/30_days_of_data_structure/tree/main/Maths)
 - [Patterns](https://github.com/echobash/30_days_of_data_structure/tree/main/Patterns)
 - [Hashing](https://github.com/echobash/30_days_of_data_structure/tree/main/hashing)
