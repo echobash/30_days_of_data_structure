@@ -14,5 +14,5 @@ arr = [10,5,10,15,10,5]
 counter = FrequencyCounter()
 frequency_count = counter.count(arr)
 
-for element in frequency_count:
-    print(element,"- ", frequency_count[element])
+for key,value in frequency_count.items():
+    print(key,"-",value,"times")
