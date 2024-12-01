@@ -12,4 +12,7 @@ class FrequencyCounter:
 arr = [10,5,10,15,10,5]
 # arr = [2,2,3,4,4,2]
 counter = FrequencyCounter()
-print(counter.count(arr))
+frequency_count = counter.count(arr)
+
+for element in frequency_count:
+    print(element,"- ", frequency_count[element])
