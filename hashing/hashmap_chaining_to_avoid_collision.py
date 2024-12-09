@@ -1,3 +1,4 @@
+# WIP
 class Hashmap:
     def __init__(self):
         self.MAX = 10
