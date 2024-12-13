@@ -1,3 +1,6 @@
+import math
+
+
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         if x < 0:
@@ -5,6 +8,26 @@ class Solution:
 
         if 0 <= x <= 9:
             return True
+
+        # get no of digits in the given no x
+        n = math.floor(math.log10(x)+1)
+
+        while x > 0:
+            lsb = x % 10
+            msb = x // (10 ** (n-1))
+
+            if lsb != msb:
+                return False
+
+            # Chop used msb
+            x = x % (10 ** (n-1))
+
+            # Chop used lsb
+            x = x // 10
+
+            n = n - 2
+
+        return True
 
 
 solution = Solution()
