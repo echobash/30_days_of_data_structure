@@ -62,10 +62,29 @@ Creative programs that generate various patterns, enhancing problem-solving with
 
 Programs focused on hashing functions and implementing hashmaps to manage data efficiently.
 
-| Program Name                       | Description                               | Status |
-|------------------------------------|-------------------------------------------|--------|
-| hashing_function.py                | Basic hashing function                    | &#10004;  |
-| hashmap_class.py                   | Implementation of a hashmap class         | &#10004;  |
+### 🔒 Hashing
+
+| **Program Name**                                | **Description**                              | **Status**  |
+|-------------------------------------------------|----------------------------------------------|-------------|
+| `hashing_function.py`                           | Basic hashing function                        | ✔️          |
+| `hashmap_class.py`                              | Implementation of a hashmap class            | ✔️          |
+| `jewels_and_stones_dictionary_way_771.py`       | Count jewels in stones using dictionaries    | ✔️          |
+| `jewels_and_stones_long_way_771.py`             | Count jewels in stones (long method)         | ✔️          |
+| `jewels_and_stones_using_set_771.py`            | Count jewels in stones using sets            | ✔️          |
+| `isomorphic_strings_205.py`                     | Check if two strings are isomorphic          | ✔️          |
+| `majority_element_169.py`                       | Find the majority element                    | ✔️          |
+| `single_number_136.py`                          | Find the unique number in a list             | ✔️          |
+| `two_sum_1.py`                                  | Find two numbers that add up to a target     | ✔️          |
+| `valid_anagram_242.py`                          | Check if two strings are anagrams            | ✔️          |
+| `word_pattern_290.py`                           | Match string to word pattern                 | ✔️          |
+| `contains_dupilcate_217.py`                     | Check if a list contains duplicate values    | ✔️          |
+| `missing_number_268.py`                         | Find the missing number in a sequence        | ✔️          |
+| `ransom_note_383.py`                            | Verify if a ransom note can be formed        | ✔️          |
+| `find_the_difference_389.py`                    | Find the extra character in a string         | ✔️          |
+| `most_frequent_least_frequent_element.py`       | Find the most and least frequent elements    | ✔️          |
+| `intersection_of_two_arrays_II_350.py`          | Find intersection of two arrays              | ✔️          |
+| `hashmap_chaining_to_avoid_collision.py`        | Implement chaining in hashmaps to avoid collision | ✔️          |
+
 
 ![Hashing Animation](https://media.giphy.com/media/xT9K2SfkLHR2c6rK0Y/giphy.gif) <!-- Example of an animated GIF related to hashing -->
 
