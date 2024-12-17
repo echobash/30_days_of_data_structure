@@ -89,6 +89,33 @@ Programs focused on hashing functions and implementing hashmaps to manage data e
 ![Hashing Animation](https://media.giphy.com/media/xT9K2SfkLHR2c6rK0Y/giphy.gif) <!-- Example of an animated GIF related to hashing -->
 
 ---
+### 📋 Array
+
+| **Program Name**                                | **Description**                              | **Status**  |
+|-------------------------------------------------|----------------------------------------------|-------------|
+| `matrix_diagonal_sum_bruteforce_1572.py`        | Calculate the diagonal sum of a matrix (brute force) | ✔️          |
+| `matrix_diagonal_sum_optimized_1572.py`         | Calculate the diagonal sum of a matrix (optimized)    | ✔️          |
+
+
+---
+### 🔃 Sorting
+
+| **Program Name**                                                   | **Description**                                                   | **Status**  |
+|--------------------------------------------------------------------|-------------------------------------------------------------------|-------------|
+| `bubble_sort.py`                                                   | Perform bubble sort on a list                                      | ✔️          |
+| `maximum_product_difference_between_two_pairs_using_sorting_1913.py` | Find the maximum product difference between two pairs (sorting)    | ✔️          |
+| `find_target_indices_after_sorting_2089.py`                        | Find target indices after sorting                                  | ✔️          |
+| `find_the_difference_using_sorting_389.py`                         | Find the extra character using sorting                             | ✔️          |
+| `maximum_product_difference_between_two_pairs_by_finding_two_max_and_two_mins_1913.py` | Find the maximum product difference by locating two max and min values | ✔️          |
+
+---
+### 🛠️ Set
+
+| **Program Name**                  | **Description**                               | **Status**  |
+|-----------------------------------|-----------------------------------------------|-------------|
+| `unique_email_address_929.py`     | Find the number of unique email addresses      | ✔️          |
+
+---
 
 ### 🔁 Loops
 [View Code](https://github.com/echobash/30_days_of_data_structure/tree/main)
