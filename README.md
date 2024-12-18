@@ -154,3 +154,107 @@ Recursive solutions for common programming problems, helping to master recursive
 1. **Clone this repository**:
    ```bash
    git clone https://github.com/echobash/30_days_of_data_structure.git
+
+
+<!-- BEGIN PROGRAMS LIST -->
+
+# Python Programs in this Repository
+
+## .
+
+- [readmegenerator.py](./readmegenerator.py)
+- [singleNonDuplicate540.py](./singleNonDuplicate540.py)
+
+## Patterns
+
+- [stars_top_to_bottom_pyramid.py](Patterns/stars_top_to_bottom_pyramid.py)
+- [xmastree.py](Patterns/xmastree.py)
+- [diamond.py](Patterns/diamond.py)
+- [xmastree_inverted.py](Patterns/xmastree_inverted.py)
+- [stars_square_pattern.py](Patterns/stars_square_pattern.py)
+- [decreasing_stars_top_to_bottom_pyramid.py](Patterns/decreasing_stars_top_to_bottom_pyramid.py)
+- [numbers_top_to_bottom_pyramid.py](Patterns/numbers_top_to_bottom_pyramid.py)
+- [halfdiamond.py](Patterns/halfdiamond.py)
+- [numbers_top_to_bottom_pyramid_alternative_solution.py](Patterns/numbers_top_to_bottom_pyramid_alternative_solution.py)
+- [numbers_top_to_bottom_pyramid_row_no_repeat.py](Patterns/numbers_top_to_bottom_pyramid_row_no_repeat.py)
+
+## array
+
+- [matrix_diagonal_sum_bruteforce_1572.py](array/matrix_diagonal_sum_bruteforce_1572.py)
+- [matrix_diagonal_sum_optimized_1572.py](array/matrix_diagonal_sum_optimized_1572.py)
+
+## recursion
+
+- [print_elements_of_array_reverse_order.py](recursion/print_elements_of_array_reverse_order.py)
+- [min_in_an_array.py](recursion/min_in_an_array.py)
+- [print_elements_of_array.py](recursion/print_elements_of_array.py)
+- [printReverseString.py](recursion/printReverseString.py)
+- [factorial.py](recursion/factorial.py)
+- [fibonacci.py](recursion/fibonacci.py)
+- [max_in_an_array.py](recursion/max_in_an_array.py)
+
+## hashing
+
+- [jewels_and_stones_dictionary_way_771.py](hashing/jewels_and_stones_dictionary_way_771.py)
+- [intersection_of_two_arrays_II_350.py](hashing/intersection_of_two_arrays_II_350.py)
+- [count_frequency.php.py](hashing/count_frequency.php.py)
+- [hashmap_class.py](hashing/hashmap_class.py)
+- [valid_anagram_242.py](hashing/valid_anagram_242.py)
+- [two_sum_1.py](hashing/two_sum_1.py)
+- [ransom_note_383.py](hashing/ransom_note_383.py)
+- [most_frequent_least_frequent_element.py](hashing/most_frequent_least_frequent_element.py)
+- [jewels_and_stones_long_way_771.py](hashing/jewels_and_stones_long_way_771.py)
+- [isomorphic_strings_205.py](hashing/isomorphic_strings_205.py)
+- [missing_number_268.py](hashing/missing_number_268.py)
+- [hashmap_chaining_to_avoid_collision.py](hashing/hashmap_chaining_to_avoid_collision.py)
+- [hashing_function.py](hashing/hashing_function.py)
+- [find_the_difference_389.py](hashing/find_the_difference_389.py)
+- [majority_element_169.py](hashing/majority_element_169.py)
+- [single_number_136.py](hashing/single_number_136.py)
+- [word_pattern_290.py](hashing/word_pattern_290.py)
+- [contains_dupilcate_217.py](hashing/contains_dupilcate_217.py)
+- [jewels_and_stones_using_set_771.py](hashing/jewels_and_stones_using_set_771.py)
+- [find_words_219.py](hashing/find_words_219.py)
+
+## Maths
+
+- [is_prime_optimized.py](Maths/is_prime_optimized.py)
+- [count_no_of_digits.py](Maths/count_no_of_digits.py)
+- [is_armstrong_no.py](Maths/is_armstrong_no.py)
+- [gcd.py](Maths/gcd.py)
+- [print_all_divisors.py](Maths/print_all_divisors.py)
+- [find_the_difference_using_xor_389.py](Maths/find_the_difference_using_xor_389.py)
+- [count_no_of_digits_optimized.py](Maths/count_no_of_digits_optimized.py)
+- [reverse_a_no.py](Maths/reverse_a_no.py)
+
+## Maths/IsPalindrome
+
+- [is_a_no_palindrome_bruteforce_to_avoid_integer_overflow.py](Maths/IsPalindrome/is_a_no_palindrome_bruteforce_to_avoid_integer_overflow.py)
+- [is_a_no_palindrome_using_string_and_reversing_complete_string.py](Maths/IsPalindrome/is_a_no_palindrome_using_string_and_reversing_complete_string.py)
+- [is_a_no_palindrome_optimized.py](Maths/IsPalindrome/is_a_no_palindrome_optimized.py)
+- [is_a_no_palindrome_by_comparing_lsb_and_msb_and_chopping_them_both.py](Maths/IsPalindrome/is_a_no_palindrome_by_comparing_lsb_and_msb_and_chopping_them_both.py)
+- [is_a_no_palindrome_prone_to_integer_overflow.py](Maths/IsPalindrome/is_a_no_palindrome_prone_to_integer_overflow.py)
+- [is_a_no_palindrome_using_string_and_using_two_pointer.py](Maths/IsPalindrome/is_a_no_palindrome_using_string_and_using_two_pointer.py)
+
+## Sorting
+
+- [maximum_product_difference_between_two_pairs_using_sorting_1913.py](Sorting/maximum_product_difference_between_two_pairs_using_sorting_1913.py)
+- [find_the_difference_using_sorting_389.py](Sorting/find_the_difference_using_sorting_389.py)
+- [find_target_indices_after_sorting_2089.py](Sorting/find_target_indices_after_sorting_2089.py)
+- [bubble_sort.py](Sorting/bubble_sort.py)
+- [maximum_product_difference_between_two_pairs_by_finding_two_max_and_two_mins_1913.py](Sorting/maximum_product_difference_between_two_pairs_by_finding_two_max_and_two_mins_1913.py)
+
+## chess
+
+- [color_of_given_chess_square.py](chess/color_of_given_chess_square.py)
+
+## Loops
+
+- [loops.py](Loops/loops.py)
+
+## Set
+
+- [unique_email_address_929.py](Set/unique_email_address_929.py)
+
+
+<!-- END PROGRAMS LIST -->
