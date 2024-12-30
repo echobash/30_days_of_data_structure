@@ -1,10 +1,12 @@
 class Solution:
     def sumOfTheDigitsOfHarshadNumber(self, x: int) -> int:
         sum = 0
-        for digit in str(x):
-            sum += int(digit)
+        old_no = x
+        while x > 0:
+            sum += x % 10
+            x //= 10
 
-        return sum if x % sum == 0 else -1
+        return sum if old_no % sum == 0 else -1
 
 
 sol = Solution()
