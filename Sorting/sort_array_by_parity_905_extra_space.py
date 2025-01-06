@@ -2,27 +2,26 @@ from typing import List
 
 
 class Solution:
-    def sortArrayByParity(self, nums: List[int]) -> List[int]:
-        odd = []
-        even = []
-        for num in nums:
-            if num % 2 == 0:
-                even.append(num)
-            else:
-                odd.append(num)
-        return even + odd
+    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+        n = len(heights)
+        age_name_mapping = {}
+        result = []
+
+        for i in range(n):
+            age_name_mapping[heights[i]] = names[i]
+
+        heights = sorted(heights, reverse=True)
+        for height in heights:
+            result.append(age_name_mapping[height])
+        return result
 
 
 solution = Solution()
 
-nums = [3,1,2,4]
-print(nums, solution.sortArrayByParity(nums))
+names = ["Mary","John","Emma"]
+heights = [180,165,170]
+print(names, heights, solution.sortPeople(names, heights))
 
-nums = [1,2]
-print(nums, solution.sortArrayByParity(nums))
-
-nums = [2,2,3,1]
-print(nums, solution.sortArrayByParity(nums))
-
-nums = [0]
-print(nums, solution.sortArrayByParity(nums))
+names = ["Alice","Bob","Bob"]
+heights = [155,185,150]
+print(names, heights, solution.sortPeople(names, heights))
