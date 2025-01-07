@@ -4,16 +4,13 @@ from typing import List
 class Solution:
     def stringMatching(self, words: List[str]) -> List[str]:
         n = len(words)
-        result = []
+        result = set()
+        words = sorted(words, key=len)
         for i in range(n):
-            for j in range(n):
-                if i == j:
-                    continue
+            for j in range(i+1, n):
                 if words[i] in words[j]:
-                    result.append(words[i])
-                    # as soon as we found that this string is subset of atleast one other string,break and come out and look for next element otherwise duplicates may be caught
-                    break
-        return result
+                    result.add(words[i])
+        return list(result)
 
 
 
