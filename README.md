@@ -3,18 +3,19 @@
 This repository contains solutions to various data structure problems committed daily as part of my 30-day challenge.
 ## Table of Contents
 
-- [Loops](#loops)
-- [Maths](#maths)
-- [Patterns](#patterns)
-- [Set](#set)
-- [Sorting](#sorting)
-- [array](#array)
-- [chess](#chess)
-- [graph](#graph)
-- [hashing](#hashing)
-- [recursion](#recursion)
-- [singleNonDuplicate](#singlenonduplicate)
-- [string](#string)
+- [Loops](https://github.com/echobash/30_days_of_data_structure/tree/main/Loops)
+- [Maths](https://github.com/echobash/30_days_of_data_structure/tree/main/Maths)
+- [Patterns](https://github.com/echobash/30_days_of_data_structure/tree/main/Patterns)
+- [Set](https://github.com/echobash/30_days_of_data_structure/tree/main/Set)
+- [Sorting](https://github.com/echobash/30_days_of_data_structure/tree/main/Sorting)
+- [array](https://github.com/echobash/30_days_of_data_structure/tree/main/array)
+- [chess](https://github.com/echobash/30_days_of_data_structure/tree/main/chess)
+- [graph](https://github.com/echobash/30_days_of_data_structure/tree/main/graph)
+- [hashing](https://github.com/echobash/30_days_of_data_structure/tree/main/hashing)
+- [recursion](https://github.com/echobash/30_days_of_data_structure/tree/main/recursion)
+- [singleNonDuplicate](https://github.com/echobash/30_days_of_data_structure/tree/main/singleNonDuplicate)
+- [string](https://github.com/echobash/30_days_of_data_structure/tree/main/string)
+
 
 ## Loops
 | Name | Description | Link | Status |
