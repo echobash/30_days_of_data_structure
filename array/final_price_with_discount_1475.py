@@ -1,24 +1,34 @@
+from typing import List
+
+
 class Solution:
-    def finalPrices(self, prices: [int]) -> [int]:
-        n = len(prices)
+    def validMountainArray(self, arr: List[int]) -> bool:
+        n = len(arr)
+        local_maxima_count = 0
+        for i in range(1, n - 1):
+            # count the no. of local maxima
+            if arr[i - 1] < arr[i] > arr[i + 1]:
+                local_maxima_count += 1
+            # There shouldn't be any local minima and no two consecutive no should be equal
+            if arr[i - 1] >= arr[i] <= arr[i + 1]:
+                return False
 
-        # prices = [8,4,6,2,3] 5
-
-        for i in range(n):
-            for j in range(i+1, n):
-                if prices[j] <= prices[i]:
-                    prices[i] -= prices[j]
-                    break
-        return prices
+        return local_maxima_count == 1
 
 
 sol = Solution()
 
-prices = [8,4,6,2,3]
-print(prices, sol.finalPrices(prices))
+arr = [2,1]
+print(arr, sol.validMountainArray(arr))
 
-prices = [1,2,3,4,5]
-print(prices, sol.finalPrices(prices))
+arr = [3,5,5]
+print(arr, sol.validMountainArray(arr))
 
-prices = [10,1,1,6]
-print(prices, sol.finalPrices(prices))
+arr = [0,3,2,1]
+print(arr, sol.validMountainArray(arr))
+
+arr =[0,2,3,3,5,2,1,0]
+print(arr, sol.validMountainArray(arr))
+
+arr = [0,3,2,1,2]
+print(arr, sol.validMountainArray(arr))
