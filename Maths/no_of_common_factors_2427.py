@@ -1,35 +1,31 @@
-from typing import List
-
-
 class Solution:
-    def checkArithmeticSubarrays(self, nums: List[int], l: List[int], r: List[int]) -> List[bool]:
-        no_of_queries = len(l)
-        result = [True] * no_of_queries
-        for i in range(no_of_queries):
-            len_temp = r[i] - l[i] + 1
-            temp_array = [0] * len_temp
-            for j in range(l[i], r[i] + 1):
-                temp_array[l[i] - j] = nums[j]
+    def commonFactors(self, a: int, b: int) -> int:
+        # we want to proceed assuming a > b so we are swapping if that's not the case
+        if a < b :
+            (a,b) = (b,a)
 
-            temp_array = sorted(temp_array)
+        count = 0
 
-            common_difference = temp_array[0] - temp_array[1]
-            for k in range(len_temp - 1):
-                if temp_array[k] - temp_array[k + 1] != common_difference:
-                    result[i] = False
-                    break
-        return result
+        for i in range(1, a+1):
+            if a % i == 0 and b % i == 0:
+                count += 1
+        return count
 
 
+a = 12
+b = 6
 sol = Solution()
 
-nums = [4,6,5,9,3,7]
-l = [0,0,2]
-r = [2,3,5]
-print(nums,l,r, sol.checkArithmeticSubarrays(nums, l, r))
+print(a,b,sol.commonFactors(a, b))
 
-nums = [-12,-9,-3,-12,-6,15,20,-25,-20,-15,-10]
-l = [0,1,6,4,8,7]
-r = [4,4,9,7,9,10]
-print(nums,l,r, sol.checkArithmeticSubarrays(nums, l, r))
+a = 25
+b = 30
+print(a,b,sol.commonFactors(a, b))
 
+a = 18
+b = 64
+print(a,b,sol.commonFactors(a, b))
+
+a = 100
+b = 8
+print(a,b,sol.commonFactors(a, b))
