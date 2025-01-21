@@ -8,6 +8,7 @@ class Solution:
         while left <= right:
             mid = (left + right) // 2
             if a[mid] == target:
+                # This could be one of the index. As we keep going leftwards, we are getting close to our answer.
                 ans = mid
                 right = mid - 1
             elif a[mid] > target:
@@ -21,7 +22,8 @@ class Solution:
         ans = -1
         while left <= right:
             mid = (left + right) // 2
-            if a[mid] == target:
+            if a[
+                mid] == target:  # This could be one of the index. As we keep going rightwards, we are getting close to our answer.
                 ans = mid
                 left = mid + 1
             elif a[mid] > target:
