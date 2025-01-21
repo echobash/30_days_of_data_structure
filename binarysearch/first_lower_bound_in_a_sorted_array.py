@@ -21,6 +21,10 @@ nums = [1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 3, 3, 3]
 target = 2
 print(nums, target,sol.find_lower_bound(nums, target))
 
+nums=[3, 4, 4, 7, 8, 10]
+target = 5
+print(nums, target,sol.find_lower_bound(nums, target))
+
 nums = [-1, 0, 3, 5, 9, 12]
 target = 11
 print(nums, target,sol.find_lower_bound(nums, target))
