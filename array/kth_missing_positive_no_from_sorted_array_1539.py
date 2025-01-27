@@ -5,11 +5,12 @@ class Solution:
     def findKthPositive(self, arr: List[int], k: int) -> int:
         current_set = set(arr)
         count = 0
-        for i in range(1,2001):
-            if i not in current_set:
+        element = 1
+        while count < k:
+            if element not in current_set:
                 count += 1
-                if count == k:
-                    return i
+            element += 1
+        return element-1
 
 
 sol = Solution()
