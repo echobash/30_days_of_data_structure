@@ -9,12 +9,10 @@ class Solution:
         h = 8
         k = ?
         """
-        counter = 0
-        result = float('inf')
-        while result > h:
-            counter += 1
-            result = sum([ceil(i / counter) for i in piles])
-        return counter
+        max_piles = max(piles)
+        for k in range(1, max_piles+1):
+            if sum([ceil(i/k) for i in piles]) <= h:
+                return k
 
 
 sol = Solution()
@@ -33,4 +31,8 @@ print(f"{piles = } | {sol.minEatingSpeed(piles, h) = }")
 
 piles = [30,11,23,4,20]
 h = 6
+print(f"{piles = } | {sol.minEatingSpeed(piles, h) = }")
+
+piles = [312884470]
+h = 312884469
 print(f"{piles = } | {sol.minEatingSpeed(piles, h) = }")
