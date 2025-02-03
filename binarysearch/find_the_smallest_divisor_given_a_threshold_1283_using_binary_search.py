@@ -4,12 +4,6 @@ from typing import List
 
 class Solution:
     def smallestDivisor(self, nums: List[int], threshold: int) -> int:
-        # min_factor, max_factor = 1, max(nums)
-
-        # for i in range(min_factor, max_factor+1):
-        #     total_sum = sum([ceil(nums[j]/i) for j in range(len(nums))])
-        #     if total_sum <= threshold:
-        #         return i
         left, right = 1, max(nums)
         ans = -1
         while left <= right:
