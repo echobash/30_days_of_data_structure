@@ -1,26 +1,28 @@
 class Solution:
-    def countSymmetricIntegers(self, low: int, high: int) -> int:
-        count = 0
-        for x in range(low, high+1):
-            no_digits = len(str(x))
-
-            if no_digits in [1,3,5]:
-                count += 0
-            elif no_digits == 2:
-                if int(str(x)[0]) == int(str(x)[1]):
-                    count += 1
-            else:
-                if int(str(x)[0]) + int(str(x)[1]) == int(str(x)[2]) + int(str(x)[3]):
-                    count += 1
-        return count
+    def angleClock(self, hour: int, minutes: int) -> float:
+        angle = abs(30 * hour - 5.5 * minutes)
+        return min(angle, 360-angle)
 
 
 sol = Solution()
 
-low = 1
-high = 100
-print(sol.countSymmetricIntegers(low,high))
+hour = 12
+minutes = 30
+print(f"{hour = } | {minutes = } | {sol.angleClock(hour,minutes) = }")
 
-low = 1200
-high = 1230
-print(sol.countSymmetricIntegers(low,high))
+hour = 3
+minutes = 30
+print(f"{hour = } | {minutes = } | {sol.angleClock(hour,minutes) = }")
+
+hour = 3
+minutes = 15
+print(f"{hour = } | {minutes = } | {sol.angleClock(hour,minutes) = }")
+
+hour = 6
+minutes = 0
+print(f"{hour = } | {minutes = } | {sol.angleClock(hour,minutes) = }")
+
+hour = 12
+minutes = 0
+print(f"{hour = } | {minutes = } | {sol.angleClock(hour,minutes) = }")
+
