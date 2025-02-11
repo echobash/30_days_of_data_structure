@@ -1,15 +1,16 @@
 class Solution:
     def decimal_to_binary(self, decimal_no):
-        result = ""
+        result = []
         while decimal_no != 0:
-            result += str(decimal_no % 2)
+            result.append(str(decimal_no % 2))
             decimal_no = decimal_no // 2
-        return result[::-1]
+        return "".join(result)[::-1]
 
     def convertDateToBinary(self, date: str) -> str:
-        year = date.split("-")[0]
-        month = date.split("-")[1]
-        day = date.split("-")[2]
+        date_parts = date.split("-")
+        year = date_parts[0]
+        month = date_parts[1]
+        day = date_parts[2]
 
         year = self.decimal_to_binary(int(year))
         month = self.decimal_to_binary(int(month))
