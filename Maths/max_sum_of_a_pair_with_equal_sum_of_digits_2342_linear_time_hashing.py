@@ -1,7 +1,5 @@
 from typing import List
 
-from typing import List
-
 
 class Solution:
     def sum_of_digits(self, number):
