@@ -20,7 +20,7 @@ class ProductOfNumbers:
         if self.found_zero_at != -1 and k >= self.length - self.found_zero_at:
             return 0
         if self.length == k:
-            return self.num_list[self.length - 1]
+            return self.num_list[-1]
         return self.num_list[self.length-1] // self.num_list[self.length - k - 1]
 
 
