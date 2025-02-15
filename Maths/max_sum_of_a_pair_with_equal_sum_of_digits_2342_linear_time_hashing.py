@@ -25,7 +25,7 @@ class Solution:
                 sum_no_mapping[digit_sum] = [nums[i]]
 
         maximum_sum_of_digits = -1
-        for sum_of_digits, numbers in sum_no_mapping.items():
+        for numbers in sum_no_mapping.values():
             if len(numbers) == 1:
                 continue
             else:
