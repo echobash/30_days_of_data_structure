@@ -25,6 +25,7 @@ class Solution:
             result.append(str(1 - int(nums[i][i])))
         return "".join(result)
     # Time complexity - O(n)
+    # Also known as Cantor's Diagonalization
 
 
 sol = Solution()
