@@ -3,15 +3,15 @@ from typing import List
 
 class Solution:
     def findDifferentBinaryString(self, nums: List[str]) -> str:
-        decimal_binary_mapping = dict()
+        decimal_binary_mapping = set()
         n = len(nums)
-        max_no = n + 2
         for num in nums:
-            decimal_binary_mapping[int(num ,2)] = num
-        for i in range(0, max_no + 1):
+            decimal_binary_mapping.add(int(num ,2))
+        for i in range(n + 1):
             if i not in decimal_binary_mapping:
                 missing_binary_number = bin(i)[2:]
                 return "0" * ( n - len(missing_binary_number)) + missing_binary_number
+    # Time complexity - n^2
 
 
 sol = Solution()
