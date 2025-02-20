@@ -10,7 +10,7 @@ class Solution:
         for i in range(n + 1):
             if i not in decimal_binary_mapping:
                 missing_binary_number = bin(i)[2:]
-                return "0" * ( n - len(missing_binary_number)) + missing_binary_number
+                return "0" * (n - len(missing_binary_number)) + missing_binary_number
     # Time complexity - n^2
 
 
