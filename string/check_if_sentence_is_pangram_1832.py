@@ -1,12 +1,6 @@
 class Solution:
     def checkIfPangram(self, sentence: str) -> bool:
-        n = len(sentence)
-
-        if n < 26:
-            return False
-
-        set_of_unique_alphabets_in_sentence = set(sentence)
-        return len(set_of_unique_alphabets_in_sentence) == 26
+        return len(set(sentence)) == 26
 
 
 sol = Solution()
