@@ -10,7 +10,6 @@ class Solution:
         i-1,j #UP
         i+1,j #DOWN
         """
-        final_position = 0
         i = j = 0
         for command in commands:
             if command == "RIGHT":
@@ -21,8 +20,8 @@ class Solution:
                 i = i - 1
             else:
                 i = i + 1
-            final_position = i * n + j
-        return final_position
+        return i * n + j
+
 
 
 sol = Solution()
