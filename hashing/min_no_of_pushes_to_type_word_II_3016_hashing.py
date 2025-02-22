@@ -26,3 +26,6 @@ print(f"{word = } {sol.minimumPushes(word) = }")
 
 word = "aabbccddeeffgghhiiiiii"
 print(f"{word = } {sol.minimumPushes(word) = }")
+
+word = "aabbccddeeffgghhiiijjjkkllmmnnooppqqrrssttuuvvxxwyyyyyyyyyyzzzzzzzzzzzzz"
+print(f"{word = } {sol.minimumPushes(word) = }")
