@@ -36,6 +36,7 @@ class Solution:
             if n % 3 == 2:
                 return False
             n //= 3
+        # Base-3 only contains 0 or 1
         return True
 
 
