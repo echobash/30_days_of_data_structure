@@ -17,3 +17,9 @@ sol = Solution()
 
 nums = [3,2,1,4]
 print(f"{nums = } {sol.findNonMinOrMax(nums) = }")
+
+nums = [1,2]
+print(f"{nums = } {sol.findNonMinOrMax(nums) = }")
+
+nums = [2,1,3]
+print(f"{nums = } {sol.findNonMinOrMax(nums) = }")
