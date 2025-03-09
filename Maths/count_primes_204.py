@@ -13,13 +13,13 @@ class Solution:
 
         all_elements = [True] * n
         for i in range(2, int(n ** 0.5) + 1):
-            if all_elements[i] == True:
+            if all_elements[i]:
                 for j in range(i * i, n, i):
                     all_elements[j] = False
 
         prime_no_count = 0
         for k in range(2, n):
-            if all_elements[k] == True:
+            if all_elements[k]:
                 prime_no_count += 1
 
         return prime_no_count
