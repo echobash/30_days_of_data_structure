@@ -13,12 +13,9 @@ class Solution:
 
         all_elements = [True] * n
         for i in range(2, int(n ** 0.5) + 1):
-            current_element = i
-            if all_elements[i] == False:
-                continue
-
-            for j in range(i * i, n, i):
-                all_elements[j] = False
+            if all_elements[i] == True:
+                for j in range(i * i, n, i):
+                    all_elements[j] = False
 
         prime_no_count = 0
         for k in range(2, n):
