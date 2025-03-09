@@ -26,7 +26,6 @@ class Solution:
         result = [-1, -1]
         for i in range(left, right + 1):
             if self.isPrime(i):
-                print(previous_prime,i)
                 if previous_prime == -1:
                     previous_prime = i
                     continue
@@ -41,18 +40,18 @@ class Solution:
 
 sol = Solution()
 
-# left = 10
-# right = 19
-# print(f" {left = } {right = } {sol.closestPrimes(left, right) = }")
+left = 10
+right = 19
+print(f" {left = } {right = } {sol.closestPrimes(left, right) = }")
 
-# left = 12
-# right = 24
-# print(f" {left = } {right = } {sol.closestPrimes(left, right) = }")
+left = 12
+right = 24
+print(f" {left = } {right = } {sol.closestPrimes(left, right) = }")
 
 left = 19
 right = 31
 print(f" {left = } {right = } {sol.closestPrimes(left, right) = }")
-#
-# left = 4
-# right = 6
-# print(f" {left = } {right = } {sol.closestPrimes(left, right) = }")
+
+left = 4
+right = 6
+print(f" {left = } {right = } {sol.closestPrimes(left, right) = }")
