@@ -34,3 +34,7 @@ print(f"{word1 = } | {word2 = } | {sol.mergeAlternately(word1, word2) = }")
 word1 = "abcd"
 word2 = "pq"
 print(f"{word1 = } | {word2 = } | {sol.mergeAlternately(word1, word2) = }")
+
+word1 = "abcdefghijk"
+word2 = "pq"
+print(f"{word1 = } | {word2 = } | {sol.mergeAlternately(word1, word2) = }")
