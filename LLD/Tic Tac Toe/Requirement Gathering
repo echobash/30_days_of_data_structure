@@ -1,0 +1,45 @@
+# Tic Tac Toe Game
+# Problem - Two players play on a 3*3 board.
+# One player is assigned X while other is assigned O -
+# say player1 is assigned X and player2 is assigned O
+# Players get their chance to mark in the board alternatively
+# Game starts
+# First player1 marks X on the board and the chance is switched
+# Now player2 has to mark O on the board.
+# And so on, until a player wins or a tie happens
+# If any one of the row has all X or all O, then the game is won
+# If any one of the column has all X or all O, then the game is won
+# If any one of the diagonal has all X or all O, then the game is won
+# If none of above happens and all board cells are full, the game is tie.
+
+
+Nouns - Board, Player, Game
+Board
+- board = [[-1, -1,-1],
+           [-1, -1, -1],
+           [-1, -1, -1]]
+- size = 3
+
+- isBoardFull()
+- getBoard()
+- updateBoard(x, y, sign)
+
+Player-
+- name
+- sign
+
+- play()
+- isWinner
+
+Game
+- currentTurn
+
+- assigns()
+- marks()
+- starts()
+- getCurrentTurn()
+- switchTurn()
+- isWon()
+- isDraw()
+
+play,assigns,starts(),get chance, marks,chance switched,wins, draws
