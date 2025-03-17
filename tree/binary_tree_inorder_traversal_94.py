@@ -10,23 +10,21 @@ class TreeNode:
 
 
 class Solution:
-    def inOrderResult(self, root: Optional[TreeNode], result=None):
-        curr = root
-        if result is None:
-            result = []
-        if curr.left:
-            self.inOrderResult(curr.left, result)
+    def inOrderResult(self,root: Optional[TreeNode], result):
+        if root.left:
+            self.inOrderResult(root.left, result)
 
-        result.append(curr.val)
+        result.append(root.val)
 
-        if curr.right:
-            self.inOrderResult(curr.right, result)
+        if root.right:
+            self.inOrderResult(root.right, result)
+
         return result
 
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
-        return self.inOrderResult(root)
+        return self.inOrderResult(root, [])
 
 
 sol = Solution()
@@ -40,12 +38,12 @@ root.left.right.left = TreeNode(6)
 root.left.right.right = TreeNode(7)
 root.right.right = TreeNode(8)
 root.right.right.left = TreeNode(9)
-print(f" {root.val =}  {sol.inOrderResult(root) =}")
+print(f" {root.val =}  {sol.inorderTraversal(root) =}")
 
 root = TreeNode(1)
 root.right = TreeNode(2)
 root.right.left = TreeNode(3)
-print(f" {root.val =}  {sol.inOrderResult(root) =}")
+print(f" {root.val =}  {sol.inorderTraversal(root) =}")
 
 root = None
 print(f" {root =}  {sol.inorderTraversal(root) =}")
