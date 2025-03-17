@@ -3,17 +3,16 @@ from typing import List
 
 class Solution:
     def divideArray(self, nums: List[int]) -> bool:
-        count_mapping = [0] * 501
+        num_frequency_arr = [0] * 501
 
-        # Store count of the nums in the list at their index
         for num in nums:
-            count_mapping[num] += 1
+            num_frequency_arr[num] += 1
 
-        # Traverse the array and check if there is atleast one such case where...
-        # ... the count is odd
-
-        for count in count_mapping:
-            if count % 2 == 1:
+        """
+        Traverse the array and check if there is atleast one such case where the count is odd
+        """
+        for frequency in num_frequency_arr:
+            if frequency % 2 == 1:
                 return False
         return True
 
