@@ -10,23 +10,21 @@ class TreeNode:
 
 
 class Solution:
-    def postOrderResult(self, root: Optional[TreeNode], result=None):
-        curr = root
-        if result is None:
-            result = []
-        if curr.left:
-            self.postOrderResult(curr.left, result)
+    def postOrderResult(self, root: Optional[TreeNode], result):
+        if root.left:
+            self.postOrderResult(root.left, result)
 
-        if curr.right:
-            self.postOrderResult(curr.right, result)
+        if root.right:
+            self.postOrderResult(root.right, result)
 
-        result.append(curr.val)
+        result.append(root.val)
+
         return result
 
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
-        return self.postOrderResult(root)
+        return self.postOrderResult(root, [])
 
 
 sol = Solution()
