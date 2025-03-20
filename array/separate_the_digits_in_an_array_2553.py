@@ -17,3 +17,6 @@ print(f" {nums = } | {sol.separateDigits(nums) = }")
 
 nums = [7,1,3,9]
 print(f" {nums = } | {sol.separateDigits(nums) = }")
+
+nums = [7,1,33,59]
+print(f" {nums = } | {sol.separateDigits(nums) = }")
