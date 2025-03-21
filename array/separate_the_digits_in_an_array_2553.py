@@ -13,5 +13,7 @@ class Solution:
 sol = Solution()
 
 nums = [13,25,83,77]
+print(f" {nums = } | {sol.separateDigits(nums) = }")
 
+nums = [7,1,3,9]
 print(f" {nums = } | {sol.separateDigits(nums) = }")
