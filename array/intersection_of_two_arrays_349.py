@@ -32,3 +32,7 @@ print(f" {nums1 = } | {nums2 = } | {sol.intersection(nums1, nums2) = }")
 nums1 = [4,3,1,6]
 nums2 = [14,13,11,62]
 print(f" {nums1 = } | {nums2 = } | {sol.intersection(nums1, nums2) = }")
+
+nums1 = []
+nums2 = [14,13,11,62]
+print(f" {nums1 = } | {nums2 = } | {sol.intersection(nums1, nums2) = }")
