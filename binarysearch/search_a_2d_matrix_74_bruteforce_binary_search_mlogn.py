@@ -21,6 +21,7 @@ class Solution:
             if self.find_target_in_row(matrix[i], target):
                 return True
         return False
+    # O(m * logn)
 
 sol = Solution()
 

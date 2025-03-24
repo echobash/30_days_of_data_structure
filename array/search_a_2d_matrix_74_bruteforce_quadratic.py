@@ -10,6 +10,7 @@ class Solution:
                 if matrix[i][j] == target:
                     return True
         return False
+    # O(m * n)
 
 sol = Solution()
 
