@@ -12,10 +12,10 @@ class Solution:
 sol = Solution()
 
 arr = [0,1,0]
-print(sol.peakIndexInMountainArray(arr))
+print(f"{arr = } {sol.peakIndexInMountainArray(arr) = }")
 
 arr = [0,2,1,0]
-print(sol.peakIndexInMountainArray(arr))
+print(f"{arr = } {sol.peakIndexInMountainArray(arr) = }")
 
-arr = [0,10,5,2]
-print(sol.peakIndexInMountainArray(arr))
+arr = [0,7, 10,5,2]
+print(f"{arr = } {sol.peakIndexInMountainArray(arr) = }")
