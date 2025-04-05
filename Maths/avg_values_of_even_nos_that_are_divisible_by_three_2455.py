@@ -19,3 +19,6 @@ print(f"{nums = } {sol.averageValue(nums) = }")
 
 nums = [1,2,4,7,10]
 print(f"{nums = } {sol.averageValue(nums) = }")
+
+nums = [1,12,4,72,10]
+print(f"{nums = } {sol.averageValue(nums) = }")
