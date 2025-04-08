@@ -9,9 +9,7 @@ class Solution:
             if num % 6 == 0:
                 total_sum += num
                 count_of_nos += 1
-        if count_of_nos == 0:
-            return total_sum
-        return total_sum // count_of_nos
+        return total_sum // count_of_nos if count_of_nos != 0 else total_sum
 
 
 sol = Solution()
