@@ -4,11 +4,12 @@ from typing import List
 class Solution:
     def maximumValue(self, strs: List[str]) -> int:
         max_value = 0
-        for str in strs:
-            if str.isnumeric():
-                max_value = max(max_value,int(str))
+        for s in strs:
+            if s.isdigit():
+                value = int(s)
             else:
-                max_value = max(max_value,len(str))
+                value = len(s)
+            max_value = max(max_value, value)
         return max_value
 
 
