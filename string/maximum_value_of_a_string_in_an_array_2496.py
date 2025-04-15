@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     def maximumValue(self, strs: List[str]) -> int:
-        max_value = 0
+        max_value = -1
         for s in strs:
             if s.isdigit():
                 value = int(s)
