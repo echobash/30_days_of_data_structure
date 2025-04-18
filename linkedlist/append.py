@@ -31,5 +31,8 @@ ll.append(23)
 ll.append(14)
 ll.append(53)
 ll.append(64)
+ll.append(4)
+ll.append(234)
+ll.append(2)
 ll.printLL()
 
