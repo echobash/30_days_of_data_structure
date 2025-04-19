@@ -45,7 +45,15 @@ class LinkedList:
         node = Node(data)
         prev.next = node
 
-
+    def insert_at_tail(self,data):
+        node = Node(data)
+        if not self.head:
+            self.head = node
+            return
+        temp = self.head
+        while temp.next is not None:
+            temp = temp.next
+        temp.next = node
 
 
     def printLL(self):
@@ -84,3 +92,9 @@ print(f"Length = {ll.getLength()}")
 ll.insert_at_position(10,1000)
 ll.printLL()
 print(f"Length = {ll.getLength()}")
+ll.insert_at_tail(888)
+ll.printLL()
+ll.insert_at_tail(193)
+ll.printLL()
+ll.insert_at_head(883)
+ll.printLL()
