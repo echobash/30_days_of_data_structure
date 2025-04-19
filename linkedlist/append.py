@@ -25,14 +25,16 @@ class LinkedList:
             self.temp.next = node
             self.temp = self.temp.next
 
+    def insert_at_head(self,data):
+        node = Node(data)
+        node.next = self.head
+        if not self.temp:
+            self.temp = self.head
+        self.head = node
 
 ll = LinkedList()
-ll.append(23)
-ll.append(14)
-ll.append(53)
-ll.append(64)
-ll.append(4)
-ll.append(234)
-ll.append(2)
+ll.insert_at_head(786)
+ll.insert_at_head(78)
+ll.append(999)
+ll.insert_at_head(22)
 ll.printLL()
-
