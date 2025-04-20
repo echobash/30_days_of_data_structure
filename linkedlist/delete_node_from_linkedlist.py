@@ -85,7 +85,7 @@ class LinkedList:
         print("Can't delete. Position > length of linkedList")
         return
 
-    def delete_first_occurence_by_value(self, value):
+    def delete_first_occurrence_by_value(self, value):
         if not self.head:
             print("Can't delete. The LinkedList is already empty")
             return
