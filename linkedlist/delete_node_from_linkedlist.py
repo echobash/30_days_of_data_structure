@@ -85,7 +85,7 @@ class LinkedList:
         print("Can't delete. Position > length of linkedList")
         return
 
-    def delete_by_value(self,value):
+    def delete_first_occurence_by_value(self, value):
         if not self.head:
             print("Can't delete. The LinkedList is already empty")
             return
@@ -121,6 +121,10 @@ class LinkedList:
 ll = LinkedList()
 ll.append(12)
 ll.append(9)
+ll.append(15)
+ll.append(15)
+ll.append(15)
+ll.append(15)
 ll.append(15)
 ll.append(17)
 ll.append(20)
@@ -189,28 +193,28 @@ ll.printLL()
 # ll.delete_at_position(1)
 # ll.printLL()
 
-ll.delete_by_value(17)
+ll.delete_first_occurence_by_value(17)
 ll.printLL()
 
-ll.delete_by_value(23)
+ll.delete_first_occurence_by_value(23)
 ll.printLL()
 
-ll.delete_by_value(20)
+ll.delete_first_occurence_by_value(20)
 ll.printLL()
 
-ll.delete_by_value(12)
+ll.delete_first_occurence_by_value(12)
 ll.printLL()
 
-ll.delete_by_value(15)
+ll.delete_first_occurence_by_value(15)
 ll.printLL()
 
-ll.delete_by_value(9)
+ll.delete_first_occurence_by_value(9)
 ll.printLL()
 
-ll.delete_by_value(44)
+ll.delete_first_occurence_by_value(44)
 ll.printLL()
 
-ll.delete_by_value(12)
+ll.delete_first_occurence_by_value(12)
 ll.printLL()
 
 
