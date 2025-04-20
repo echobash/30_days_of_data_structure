@@ -108,6 +108,29 @@ class LinkedList:
         print(f"This value {value} doesn't exist in the LinkedList")
         return
 
+    def delete_all_occurrences_by_value(self, value):
+        if not self.head:
+            print("Can't delete. The LinkedList is already empty")
+            return
+
+        if value == self.head.data:
+            self.deleteHead()
+            return
+
+        temp = self.head
+        prev = None
+        found = False
+        while temp:
+            if temp.data == value:
+                prev.next = temp.next
+                found = True
+            else:
+                prev = temp
+            temp = temp.next
+        if not found:
+            print(f"This value {value} doesn't exist in the LinkedList")
+        return
+
     def append(self,data):
         node = Node(data)
         if not self.head:
@@ -193,28 +216,52 @@ ll.printLL()
 # ll.delete_at_position(1)
 # ll.printLL()
 
-ll.delete_first_occurrence_by_value(17)
+# ll.delete_first_occurrence_by_value(17)
+# ll.printLL()
+#
+# ll.delete_first_occurrence_by_value(23)
+# ll.printLL()
+#
+# ll.delete_first_occurrence_by_value(20)
+# ll.printLL()
+#
+# ll.delete_first_occurrence_by_value(12)
+# ll.printLL()
+#
+# ll.delete_first_occurrence_by_value(15)
+# ll.printLL()
+#
+# ll.delete_first_occurrence_by_value(9)
+# ll.printLL()
+#
+# ll.delete_first_occurrence_by_value(44)
+# ll.printLL()
+#
+# ll.delete_first_occurrence_by_value(12)
+# ll.printLL()
+
+ll.delete_all_occurrences_by_value(17)
 ll.printLL()
 
-ll.delete_first_occurrence_by_value(23)
+ll.delete_all_occurrences_by_value(23)
 ll.printLL()
 
-ll.delete_first_occurrence_by_value(20)
+ll.delete_all_occurrences_by_value(20)
 ll.printLL()
 
-ll.delete_first_occurrence_by_value(12)
+ll.delete_all_occurrences_by_value(12)
 ll.printLL()
 
-ll.delete_first_occurrence_by_value(15)
+ll.delete_all_occurrences_by_value(15)
 ll.printLL()
 
-ll.delete_first_occurrence_by_value(9)
+ll.delete_all_occurrences_by_value(9)
 ll.printLL()
 
-ll.delete_first_occurrence_by_value(44)
+ll.delete_all_occurrences_by_value(44)
 ll.printLL()
 
-ll.delete_first_occurrence_by_value(12)
+ll.delete_all_occurrences_by_value(12)
 ll.printLL()
 
 
