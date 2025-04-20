@@ -193,28 +193,28 @@ ll.printLL()
 # ll.delete_at_position(1)
 # ll.printLL()
 
-ll.delete_first_occurence_by_value(17)
+ll.delete_first_occurrence_by_value(17)
 ll.printLL()
 
-ll.delete_first_occurence_by_value(23)
+ll.delete_first_occurrence_by_value(23)
 ll.printLL()
 
-ll.delete_first_occurence_by_value(20)
+ll.delete_first_occurrence_by_value(20)
 ll.printLL()
 
-ll.delete_first_occurence_by_value(12)
+ll.delete_first_occurrence_by_value(12)
 ll.printLL()
 
-ll.delete_first_occurence_by_value(15)
+ll.delete_first_occurrence_by_value(15)
 ll.printLL()
 
-ll.delete_first_occurence_by_value(9)
+ll.delete_first_occurrence_by_value(9)
 ll.printLL()
 
-ll.delete_first_occurence_by_value(44)
+ll.delete_first_occurrence_by_value(44)
 ll.printLL()
 
-ll.delete_first_occurence_by_value(12)
+ll.delete_first_occurrence_by_value(12)
 ll.printLL()
 
 
