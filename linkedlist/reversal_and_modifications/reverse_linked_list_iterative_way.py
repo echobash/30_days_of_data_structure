@@ -41,8 +41,7 @@ class LinkedList:
 
 
 ll = LinkedList()
-# data = [12, 9, 15, 17, 20, 44]
-data = [12]
+data = [12, 9, 15, 17, 20, 44]
 
 for value in data:
     ll.append(value)
