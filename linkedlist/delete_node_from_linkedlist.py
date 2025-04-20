@@ -54,6 +54,37 @@ class LinkedList:
             temp = temp.next
         temp.next = None
 
+    def delete_at_position(self,position):
+        # 12->9->15->17->20->44->None
+        if not self.head:
+            print("Can't delete. The LinkedList is already empty")
+            return
+
+        if position < 1:
+            print("Can't delete. Invalid Position given")
+            return
+
+        temp = self.head
+        prev = None
+        pos = 1
+
+        if position == 1:
+            self.deleteHead()
+            return
+
+        while temp is not None:
+            if pos == position:
+                print(f"Deleted node at position {position} with data = {temp.data}")
+                prev.next = temp.next
+                return
+            else:
+                prev = temp
+                temp = temp.next
+                pos += 1
+
+        print("Can't delete. Position > length of linkedList")
+        return
+
     def append(self,data):
         node = Node(data)
         if not self.head:
@@ -73,6 +104,7 @@ ll.append(20)
 ll.append(44)
 ll.printLL()
 
+# Delete Heads
 # ll.deleteHead()
 # ll.printLL()
 #
@@ -91,23 +123,48 @@ ll.printLL()
 # ll.deleteHead()
 # ll.printLL()
 
-ll.deleteTail()
+# Delete Tails
+# ll.deleteTail()
+# ll.printLL()
+#
+# ll.deleteTail()
+# ll.printLL()
+#
+# ll.deleteTail()
+# ll.printLL()
+#
+# ll.deleteTail()
+# ll.printLL()
+#
+# ll.deleteTail()
+# ll.printLL()
+#
+# ll.deleteTail()
+# ll.printLL()
+#
+# ll.deleteTail()
+# ll.printLL()
+
+ll.delete_at_position(3)
 ll.printLL()
 
-ll.deleteTail()
+ll.delete_at_position(3)
 ll.printLL()
 
-ll.deleteTail()
+ll.delete_at_position(3)
 ll.printLL()
 
-ll.deleteTail()
+ll.delete_at_position(3)
 ll.printLL()
 
-ll.deleteTail()
+ll.delete_at_position(2)
 ll.printLL()
 
-ll.deleteTail()
+ll.delete_at_position(1)
 ll.printLL()
 
-ll.deleteTail()
+ll.delete_at_position(1)
 ll.printLL()
+
+
+
