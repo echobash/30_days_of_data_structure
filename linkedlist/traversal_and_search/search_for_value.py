@@ -31,11 +31,9 @@ class LinkedList:
 
 
 ll = LinkedList()
-ll.append(12)
-ll.append(9)
-ll.append(15)
-ll.append(17)
-ll.append(20)
-ll.append(44)
+data = [12,9,15,17,20,44]
+
+for value in data:
+    ll.append(value)
 
 print(ll.search(17))
