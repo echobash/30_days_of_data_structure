@@ -113,13 +113,13 @@ class LinkedList:
             print("Can't delete. The LinkedList is already empty")
             return
 
-        if value == self.head.data:
+        found = False
+
+        while self.head and value == self.head.data:
             self.deleteHead()
-            return
 
         temp = self.head
         prev = None
-        found = False
         while temp:
             if temp.data == value:
                 prev.next = temp.next
@@ -129,6 +129,8 @@ class LinkedList:
             temp = temp.next
         if not found:
             print(f"This value {value} doesn't exist in the LinkedList")
+        else:
+            print(f"Deleted all occurrences of the {value} from the LinkedList")
         return
 
     def append(self,data):
@@ -142,17 +144,17 @@ class LinkedList:
 
 
 ll = LinkedList()
-ll.append(12)
-ll.append(9)
-ll.append(15)
-ll.append(15)
-ll.append(15)
-ll.append(15)
-ll.append(15)
-ll.append(17)
-ll.append(20)
-ll.append(44)
-ll.printLL()
+# ll.append(12)
+# ll.append(9)
+# ll.append(15)
+# ll.append(15)
+# ll.append(15)
+# ll.append(15)
+# ll.append(15)
+# ll.append(17)
+# ll.append(20)
+# ll.append(44)
+# ll.printLL()
 
 # Delete Heads
 # ll.deleteHead()
@@ -240,32 +242,49 @@ ll.printLL()
 # ll.delete_first_occurrence_by_value(12)
 # ll.printLL()
 
-ll.delete_all_occurrences_by_value(17)
+# ll.delete_all_occurrences_by_value(17)
+# ll.printLL()
+#
+# ll.delete_all_occurrences_by_value(23)
+# ll.printLL()
+#
+# ll.delete_all_occurrences_by_value(20)
+# ll.printLL()
+#
+# ll.delete_all_occurrences_by_value(12)
+# ll.printLL()
+#
+# ll.delete_all_occurrences_by_value(15)
+# ll.printLL()
+#
+# ll.delete_all_occurrences_by_value(9)
+# ll.printLL()
+#
+# ll.delete_all_occurrences_by_value(44)
+# ll.printLL()
+#
+# ll.delete_all_occurrences_by_value(12)
+# ll.printLL()
+
+
+# ll.append(20)
+# ll.append(20)
+# ll.append(20)
+# ll.append(30)
+#
+#
+# ll.printLL()
+# ll.delete_all_occurrences_by_value(30)
+# ll.printLL()
+# ll.delete_all_occurrences_by_value(20)
+# ll.printLL()
+
+
+ll.append(10)
+ll.append(10)
+ll.append(20)
+ll.append(10)
+
 ll.printLL()
-
-ll.delete_all_occurrences_by_value(23)
+ll.delete_all_occurrences_by_value(10)
 ll.printLL()
-
-ll.delete_all_occurrences_by_value(20)
-ll.printLL()
-
-ll.delete_all_occurrences_by_value(12)
-ll.printLL()
-
-ll.delete_all_occurrences_by_value(15)
-ll.printLL()
-
-ll.delete_all_occurrences_by_value(9)
-ll.printLL()
-
-ll.delete_all_occurrences_by_value(44)
-ll.printLL()
-
-ll.delete_all_occurrences_by_value(12)
-ll.printLL()
-
-
-
-
-
-
