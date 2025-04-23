@@ -21,7 +21,11 @@ sentence = "i am tired"
 searchWord = "you"
 print(f"{sentence = }  {searchWord = } {sol.isPrefixOfWord(sentence, searchWord) = }")
 
-
 sentence = "i am in abundance"
 searchWord = "abun"
+print(f"{sentence = }  {searchWord = } {sol.isPrefixOfWord(sentence, searchWord) = }")
+
+
+sentence = "the great people keep on being amazing and amazing"
+searchWord = "ama"
 print(f"{sentence = }  {searchWord = } {sol.isPrefixOfWord(sentence, searchWord) = }")
