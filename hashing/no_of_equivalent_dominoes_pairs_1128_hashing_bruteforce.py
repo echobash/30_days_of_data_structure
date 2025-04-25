@@ -10,11 +10,11 @@ class Solution:
 
         for domino in sorted_dominoes:
             if str(domino[0])+str(domino[1]) in freq_count:
-                freq_count[str(domino[0])+str(domino[1])] += 1
+                freq_count[str(domino[0]) + str(domino[1])] += 1
             else:
-                freq_count[str(domino[0])+str(domino[1])] = 1
+                freq_count[str(domino[0]) + str(domino[1])] = 1
 
-        total_count =0
+        total_count = 0
         for freq in freq_count.values():
             if freq > 1:
                 total_count += (freq * (freq-1)//2)
