@@ -27,5 +27,5 @@ sol = Solution()
 responses = [["good", "ok", "good", "ok"], ["ok", "bad", "good", "ok", "ok"], ["good"], ["bad"]]
 print(f" {responses = } | {sol.findCommonResponse(responses) = }")
 
-responses = [["good","ok","good"],["ok","bad"],["bad","notsure"],["great","good"]]
+responses = [["good","ok","good"],["ok","bad"],["bad","not sure"],["great","good"]]
 print(f" {responses = } | {sol.findCommonResponse(responses) = }")
