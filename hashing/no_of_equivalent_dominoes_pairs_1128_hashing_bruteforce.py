@@ -15,7 +15,7 @@ class Solution:
                 freq_count[str(domino[0])+str(domino[1])] = 1
 
         total_count =0
-        for dom, freq in freq_count.items():
+        for freq in freq_count.values():
             if freq > 1:
                 total_count += (freq * (freq-1)//2)
 
