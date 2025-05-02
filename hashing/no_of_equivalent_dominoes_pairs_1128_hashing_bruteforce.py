@@ -21,8 +21,6 @@ class Solution:
 
         return total_count
 
-        # Check which element will be the same either on top or down i.e count>= n
-
 
 solution = Solution()
 
