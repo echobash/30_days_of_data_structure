@@ -10,9 +10,6 @@ class Solution:
         if not head:
             return False
 
-        if not head.next:
-            return True
-
         # Store nodes in a list as it is
         temp = head
         while temp is not None:
