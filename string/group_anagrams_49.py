@@ -2,11 +2,7 @@ from typing import List
 
 
 class Solution:
-    def checkAnagram(self, word1, word2):
-        return sorted(word1) == sorted(word2)
-
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        result = []
         n = len(strs)
         visited = dict()
 
@@ -23,10 +19,7 @@ class Solution:
             else:
                 visited[sorted_word].append(strs[i])
 
-        for val in visited.values():
-            result.append(val)
-
-        return result
+        return list(visited.values())
 
 
 sol = Solution()
