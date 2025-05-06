@@ -28,6 +28,7 @@ class Solution:
 
         return result
 
+
 sol = Solution()
 
 strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
