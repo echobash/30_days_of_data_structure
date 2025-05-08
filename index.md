@@ -1,13 +1,26 @@
 ---
 layout: default
-title: Home
+title: Coding Challenges
 ---
 
-# 📘 30 Days of Data Structures
+# Table of Contents
 
-Welcome to my daily data structure problem-solving log.
+- [Array](#array)
+  - [Problem 1: Bubble Sort](#problem-1-bubble-sort)
+  - [Problem 2: Merge Sort](#problem-2-merge-sort)
+- [Linked List](#linked-list)
+  - [Problem 1: Reverse Linked List](#problem-1-reverse-linked-list)
+  - [Problem 2: Detect Cycle in Linked List](#problem-2-detect-cycle-in-linked-list)
 
-## 📂 Categories
+# Array
 
-- [Arrays](./_problems/arrays/two_sum.md)
-- [Linked List](./_problems/linked_list/merge_sorted.md)
+## Problem 1: Bubble Sort
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
