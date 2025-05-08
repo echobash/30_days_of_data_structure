@@ -1,5 +1,2 @@
 title: "30 Days of Data Structures"
 markdown: kramdown
-kramdown:
-  input: GFM
-theme: minima
