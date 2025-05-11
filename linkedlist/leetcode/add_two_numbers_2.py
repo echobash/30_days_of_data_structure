@@ -49,6 +49,6 @@ class Solution:
             carry = sum // 10
             if temp2.next is None and carry != 0:
                 temp2.next = ListNode(carry)
-                break
+                return bigger
             temp2 = temp2.next
         return bigger
