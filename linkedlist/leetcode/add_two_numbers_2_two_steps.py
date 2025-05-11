@@ -32,6 +32,9 @@ class Solution:
         temp2 = bigger
         carry = 0
 
+        """
+        We are running outer loop on smaller LL and then one another loop for remaining nodes in bigger LL
+        """
         while temp1 is not None:
             sum = temp1.val + temp2.val + carry
             temp2.val = sum % 10
