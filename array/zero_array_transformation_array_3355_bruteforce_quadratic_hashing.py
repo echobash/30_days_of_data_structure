@@ -22,8 +22,8 @@ class Solution:
         for i in range(n):
             # print(nums[i] - index_updation_freq_mapping[i])
             if i in index_updation_freq_mapping:
-                nums[i] = 0 if nums[i] - index_updation_freq_mapping[i] < 0 else nums[i] - index_updation_freq_mapping[
-                    i]
+                if nums[i] != 0:
+                    nums[i] = nums[i] - index_updation_freq_mapping[i]
             if nums[i] == 0:
                 count_zero += 1
 
