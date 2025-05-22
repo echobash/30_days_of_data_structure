@@ -1,46 +1,37 @@
-# Definition for singly-linked list.
-from typing import Optional
-
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from typing import List
 
 
 class Solution:
-    def pairSum(self, head: Optional[ListNode]) -> int:
-        # Use slow and fast pointer to find the middle of the list
-        # Reverse the other half of the linked list from "middle"
-        # Now take sum correspondingly
+    def findDuplicate(self, nums: List[int]) -> int:
+        # Bruteforce n ^ 2
+        # Slightly Better n*logn
 
-        # If there is only one node, return its value
-        if not head.next:
-            return head.val
+        # We'll use hare and tortoise approach here when elements can be used as indices and duplicacy is there
+        # Start with slow moving one step and Fast movie two steps so advance while s != f does not break initially
+        slow = fast = nums[0]
+        slow, fast = nums[slow], nums[nums[fast]]
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
+        # Here slow = fast, it means there is the circle for sure. But necessarily at slow or fast
 
-        slow = head
-        fast = head
+        # Reset slow to head/first element
+        slow = nums[0]
 
-        while fast is not None:  # n is even as per question so we won't need fast.next is not None
-            slow = slow.next
-            fast = fast.next.next
+        # Move both pointers by 1 step at a time now
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[fast]
+        return slow
 
-        # middle = slow
-        prev = None
-        while slow is not None:
-            future = slow.next
-            slow.next = prev
-            prev = slow
-            slow = future
-        secondHalfReversedHead = prev
 
-        temp1 = head
-        temp2 = secondHalfReversedHead
-        max_sum = 0
-        curr_sum = 0
-        while temp2 is not None:
-            curr_sum = temp2.val + temp1.val
-            temp2 = temp2.next
-            temp1 = temp1.next
-            max_sum = max(curr_sum, max_sum)
-        return max_sum
+sol = Solution()
+
+nums = [1,3,4,2,2]
+print(f"{nums = } {sol.findDuplicate(nums) = } ")
+
+nums = [3,1,3,4,2]
+print(f"{nums = } {sol.findDuplicate(nums) = } ")
+
+nums = [3,3,3,3,3]
+print(f"{nums = } {sol.findDuplicate(nums) = } ")
