@@ -5,11 +5,9 @@ class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         n = len(nums)
         product_without_zero = 1
-        product_with_zero = 1
         count_zero = 0
 
         for num in nums:
-            product_with_zero *= num
             if num != 0:
                 product_without_zero *= num
             if num == 0:
@@ -30,18 +28,18 @@ class Solution:
                     # If only one zero is there and that's not the current element, return 0
                     result.append(0)
             else:
-                # If there are no zeroes, return product_with_zero// num blindly
-                result.append(product_with_zero// num)
+                # If there are no zeroes, return product_without_zero// num blindly
+                result.append(product_without_zero // num)
         return result
 
 
 sol = Solution()
 
-nums = [1,2,3,4]
+nums = [1, 2, 3, 4]
 print(f" {nums = } | {sol.productExceptSelf(nums) = }")
 
-nums = [-1,1,0,-3,3]
+nums = [-1, 1, 0, -3, 3]
 print(f" {nums = } | {sol.productExceptSelf(nums) = }")
 
-nums = [-1,1,0,-3,0,3]
+nums = [-1, 1, 0, -3, 0, 3]
 print(f" {nums = } | {sol.productExceptSelf(nums) = }")
