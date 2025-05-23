@@ -12,10 +12,12 @@ class Solution:
                 heapq.heappush(heap, num)
             else:
                 if num > heap[0]:
-                    heapq.heappushpop(heap, num)
+                    heapq.heapreplace(heap, num)
                     # heapq.heappop(heap)
                     # heapq.heappush(heap, num)
         return heap[0]
+
+
 
 
 sol = Solution()
