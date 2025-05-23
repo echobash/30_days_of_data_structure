@@ -16,10 +16,10 @@ class Solution:
 solution = Solution()
 
 nums = [3,2,1]
-print(solution.thirdMax(nums))
+print(f"{nums = } {solution.thirdMax(nums) = }")
 
 nums = [1,2]
-print(solution.thirdMax(nums))
+print(f"{nums = } {solution.thirdMax(nums) = }")
 
 nums = [2,2,3,1]
-print(solution.thirdMax(nums))
+print(f"{nums = } {solution.thirdMax(nums) = }")
