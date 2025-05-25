@@ -18,7 +18,7 @@ sol = Solution()
 
 nums = [7, 10, 4, 3, 20, 15]
 k = 3
-print(f"{nums = } {sol.findKthSmallest(nums, k) = }")
+print(f"{nums = } {k = } {sol.findKthSmallest(nums, k) = }")
 
 nums = [3, 2, 1, 5, 6, 4]
 k = 2
