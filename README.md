@@ -418,9 +418,9 @@ Click the **`<summary>`** tags to expand/collapse the detailed file lists for ea
 | Print Reverse String (Recursion)| [recursion/printReverseString.py](recursion/printReverseString.py)      | Done   |               |
 | Print Array (Recursion)         | [recursion/print_elements_of_array.py](recursion/print_elements_of_array.py) | Done  |               |
 | Print Array Reverse (Recursion) | [recursion/print_elements_of_array_reverse_order.py](recursion/print_elements_of_array_reverse_order.py) | Done |           |
-| Python Profiling - Bottleneck   | [pythonprofiling/bottleneck_checking.py](pythonprofiling/bottleneck_checking.py) | Done | Example       |
-| Python Profiling - Frequencies| [pythonprofiling/call_frequencies.py](pythonprofiling/call_frequencies.py)  | Done | Example       |
-| Python Profiling - Time Check   | [pythonprofiling/optimization_time_check.py](pythonprofiling/optimization_time_check.py) | Done | Example       |
+| Python Profiling - Bottleneck   | [pythonprofiling/bottleneck_checking.py](Python Concepts/Python Profiling/bottleneck_checking.py) | Done | Example       |
+| Python Profiling - Frequencies| [pythonprofiling/call_frequencies.py](Python Concepts/Python Profiling/call_frequencies.py)  | Done | Example       |
+| Python Profiling - Time Check   | [pythonprofiling/optimization_time_check.py](Python Concepts/Python Profiling/optimization_time_check.py) | Done | Example       |
 
 </details>
 
