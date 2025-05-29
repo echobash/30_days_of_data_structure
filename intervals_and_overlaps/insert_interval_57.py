@@ -16,9 +16,9 @@ class Solution:
         else:
             result.append(intervals[0])
         # Case 2 - Interval to be inserted in the middle
-        for i in range(n):
+        for interval in intervals:
             last_end_time = result[-1][1]
-            if newInterval[0] <= intervals[i][0]:
+            if newInterval[0] <= interval[0]:
                 # insert here
                 if last_end_time < newInterval[0]:
                     result.append(newInterval)
@@ -27,10 +27,10 @@ class Solution:
 
             # Normal code for merging
             last_end_time = result[-1][1]
-            if last_end_time < intervals[i][0]:
-                result.append(intervals[i])
+            if last_end_time < interval[0]:
+                result.append(interval)
             else:
-                result[-1][1] = max(last_end_time, intervals[i][1])
+                result[-1][1] = max(last_end_time, interval[1])
 
         # Case 3 - Interval to be inserted at the last node
         if newInterval[0] > intervals[n - 1][0]:
