@@ -17,5 +17,8 @@ print(f"{s = }  {sol.hasSameDigits(s) = }")
 s = "34789"
 print(f"{s = }  {sol.hasSameDigits(s) = }")
 
+s = "2345223"
+print(f"{s = }  {sol.hasSameDigits(s) = }")
+
 s = "242"
 print(f"{s = }  {sol.hasSameDigits(s) = }")
