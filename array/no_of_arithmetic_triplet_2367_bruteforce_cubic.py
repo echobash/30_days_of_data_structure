@@ -22,3 +22,7 @@ print(f" {nums = } | {diff = } | {sol.arithmeticTriplets(nums,diff) = }")
 nums = [4,5,6,7,8,9]
 diff = 2
 print(f" {nums = } | {diff = } | {sol.arithmeticTriplets(nums,diff) = }")
+
+nums = [4,5,6,7,8,9]
+diff = 99
+print(f" {nums = } | {diff = } | {sol.arithmeticTriplets(nums,diff) = }")
