@@ -12,19 +12,23 @@ class Solution:
         for i in range(k):
             if arr[i] < 0:
                 negatives.append(arr[i])
-        m = len(negatives)
-        result.append(negatives[0] if m else 0)
+        if len(negatives):
+            result.append(negatives[0])
+        else:
+            result.append(0)
 
         # Rest windows
         for i in range(k, n):
             if arr[i] < 0:
                 negatives.append(arr[i])
 
-            if arr[i - k] >= 0:
-                result.append(negatives[0] if len(negatives) else 0)
-            else:
+            if arr[i - k] < 0:
                 negatives.popleft()
-                result.append(negatives[0] if len(negatives) else 0)
+
+            if len(negatives):
+                result.append(negatives[0])
+            else:
+                result.append(0)
         return result
 
 
