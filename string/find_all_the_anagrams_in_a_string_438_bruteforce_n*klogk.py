@@ -6,7 +6,7 @@ class Solution:
         n,k = len(s), len(p)
         result = []
 
-        if k == 0 or p == 0:
+        if n * k == 0:
             return []
 
         for i in range(n-k+1):
