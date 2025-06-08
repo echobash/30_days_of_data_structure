@@ -22,8 +22,8 @@ sol = Solution()
 
 nums = [1,3,-1,-3,5,3,6,7]
 k = 3
-print(f" {nums = } | {k = } | {sol.longest_subarray_with_sum_less_than_k(nums, k) = }")
+print(f" {nums = } | {k = } | {sol.longest_subarray_with_sum_less_than_equal_to_k(nums, k) = }")
 
 nums = [2,5,1,7,10]
 k = 14
-print(f" {nums = } | {k = } | {sol.longest_subarray_with_sum_less_than_k(nums, k) = }")
+print(f" {nums = } | {k = } | {sol.longest_subarray_with_sum_less_than_equal_to_k(nums, k) = }")
