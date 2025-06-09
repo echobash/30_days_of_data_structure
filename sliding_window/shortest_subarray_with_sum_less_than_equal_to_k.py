@@ -9,6 +9,11 @@ class Solution:
         left = 0
         result = []
 
+        if n == 1:
+            if nums[0] <= k:
+                return [nums[0]]
+            return []
+
         for i in range(n):
             curr_sum += nums[i]
 
@@ -17,7 +22,7 @@ class Solution:
                 left += 1
 
             curr_len = i - left + 1
-            if curr_len and curr_len <= min_len and curr_sum <= k:
+            if curr_len and curr_len < min_len and curr_sum <= k:
                 min_len = curr_len
                 result = nums[left: i + 1]
         return result
