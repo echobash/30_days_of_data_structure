@@ -17,7 +17,7 @@ class Solution:
                 left += 1
 
             curr_len = i - left + 1
-            if curr_len and curr_len < min_len and curr_sum <= k:
+            if curr_len and curr_len <= min_len and curr_sum <= k:
                 min_len = curr_len
                 result = nums[left: i + 1]
         return result
@@ -27,6 +27,10 @@ sol = Solution()
 
 nums = [2,5,1,10,10]
 k = 14
+print(f" {nums = } | {k = } | {sol.shortest_subarray_with_sum_less_than_equal_to_k(nums, k) = }")
+
+nums = [2]
+k = 3
 print(f" {nums = } | {k = } | {sol.shortest_subarray_with_sum_less_than_equal_to_k(nums, k) = }")
 
 nums = [2,4,6,2,5,9,3,5,2,4]
