@@ -40,3 +40,6 @@ print(f"{nums = } {sol.leftRightDifference(nums) = }")
 
 nums = [1]
 print(f"{nums = } {sol.leftRightDifference(nums) = }")
+
+nums = [0,4,8,3,0]
+print(f"{nums = } {sol.leftRightDifference(nums) = }")
