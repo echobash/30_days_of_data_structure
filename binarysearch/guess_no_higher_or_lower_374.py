@@ -31,3 +31,6 @@ sol = Solution()
 
 n = 10
 print(f"{n = } {sol.guessNumber(n) = }")
+
+n = 6
+print(f"{n = } {sol.guessNumber(n) = }")
