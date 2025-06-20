@@ -28,3 +28,9 @@ print(f" {nums = } | {sol.rearrangeArray(nums) = }")
 
 nums = [-1,1]
 print(f" {nums = } | {sol.rearrangeArray(nums) = }")
+
+nums = [-1,1]
+print(f" {nums = } | {sol.rearrangeArray(nums) = }")
+
+nums = [-1,-4,-5,-8,-1,-34,1,5,2,3,55,67]
+print(f" {nums = } | {sol.rearrangeArray(nums) = }")
