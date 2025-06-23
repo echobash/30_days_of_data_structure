@@ -17,5 +17,8 @@ print(f" {s = } {sol.removeStars(s) =}")
 s = "erase*****"
 print(f" {s = } {sol.removeStars(s) =}")
 
+s = "a*b*c*"
+print(f" {s = } {sol.removeStars(s) =}")
+
 s = "e*"
 print(f" {s = } {sol.removeStars(s) =}")
