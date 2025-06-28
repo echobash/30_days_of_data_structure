@@ -18,3 +18,6 @@ print(f"{n = } {sol.alternateDigitSum(n) = }")
 
 n = 886996
 print(f"{n = } {sol.alternateDigitSum(n) = }")
+
+n = 8
+print(f"{n = } {sol.alternateDigitSum(n) = }")
