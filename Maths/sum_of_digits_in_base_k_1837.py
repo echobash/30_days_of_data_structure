@@ -15,3 +15,7 @@ sol = Solution()
 n = 34
 k = 6
 print(f"{n = } {k = } {sol.sumBase(n, k) = }")
+
+n = 10
+k = 10
+print(f"{n = } {k = } {sol.sumBase(n, k) = }")
