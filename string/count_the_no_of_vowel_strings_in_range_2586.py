@@ -22,3 +22,8 @@ words = ["hey","aeo","mu","ooo","artro"]
 left = 1
 right = 4
 print(f"{words = } {left = } {right = } {sol.vowelStrings(words,left, right) = }")
+
+words = ["hey","aeo","mu","ooo"]
+left = 1
+right = 3
+print(f"{words = } {left = } {right = } {sol.vowelStrings(words,left, right) = }")
