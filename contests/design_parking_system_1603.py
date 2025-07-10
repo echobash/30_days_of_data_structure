@@ -24,16 +24,13 @@ class ParkingSystem:
 
 
 # Your ParkingSystem object will be instantiated and called as such:
-# obj = ParkingSystem(big, medium, small)
-# param_1 = obj.addCar(carType)
+big = 1
+medium = 1
+small = 0
 
-
-sol = Solution()
-
-n = 34
-k = 6
-print(f"{n = } {k = } {sol.sumBase(n, k) = }")
-
-n = 10
-k = 10
-print(f"{n = } {k = } {sol.sumBase(n, k) = }")
+obj = ParkingSystem(big, medium, small)
+param_1 = obj.addCar(1)
+param_2 = obj.addCar(2)
+param_3 = obj.addCar(3)
+param_4 = obj.addCar(1)
+print(param_1,param_2,param_3,param_4)
