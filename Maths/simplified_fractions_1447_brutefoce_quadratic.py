@@ -9,7 +9,7 @@ class Solution:
             for j in range(1, n+1):
                 if gcd(i, j) != 1 or i >= j:
                     continue
-                result.append(str(i) + "/" + str(j))
+                result.append(f"{i}/{j}")
         return result
 
 
