@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def generateTheString(self, n: int) -> str:
         """
@@ -21,19 +18,19 @@ class Solution:
 sol = Solution()
 
 n = 1
-print(f"{n = } {sol.sumZero(n) = }")
+print(f"{n = } {sol.generateTheString(n) = }")
 
 n = 2
-print(f"{n = } {sol.sumZero(n) = }")
+print(f"{n = } {sol.generateTheString(n) = }")
 
 n = 3
-print(f"{n = } {sol.sumZero(n) = }")
+print(f"{n = } {sol.generateTheString(n) = }")
 
 n = 4
-print(f"{n = } {sol.sumZero(n) = }")
+print(f"{n = } {sol.generateTheString(n) = }")
 
 n = 5
-print(f"{n = } {sol.sumZero(n) = }")
+print(f"{n = } {sol.generateTheString(n) = }")
 
 n = 468
-print(f"{n = } {sol.sumZero(n) = }")
+print(f"{n = } {sol.generateTheString(n) = }")
