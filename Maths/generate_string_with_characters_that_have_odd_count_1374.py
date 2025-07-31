@@ -2,17 +2,11 @@ class Solution:
     def generateTheString(self, n: int) -> str:
         """
         n = even -> odd+odd
-        n = odd -> odd + odd + odd
+        n = odd -> same char occur n times
         """
-        if n == 1:
-            return "a"
-
         if n % 2 == 0:
-            return "a" + (n - 1) * "b"
-        else:
-            if n == 3:
-                return "abc"
-            return "a" + 3 * "b" + (n - 4) * "c"
+            return "a"+(n-1)*"b"
+        return "a"*n
 
 
 sol = Solution()
