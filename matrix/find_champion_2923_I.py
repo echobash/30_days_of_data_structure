@@ -7,7 +7,7 @@ class Solution:
         ans = -1
         m,n = len(grid), len(grid[0])
         for i in range(m):
-            if  sum(grid[i]) > max_sum:
+            if sum(grid[i]) > max_sum:
                 max_sum = sum(grid[i])
                 ans = i
         return ans
@@ -16,4 +16,7 @@ class Solution:
 sol = Solution()
 
 grid = [[0,1],[0,0]]
+print(f"{grid = } {sol.findChampion(grid) = }")
+
+grid = [[0,0,1],[1,0,1],[0,0,0]]
 print(f"{grid = } {sol.findChampion(grid) = }")
