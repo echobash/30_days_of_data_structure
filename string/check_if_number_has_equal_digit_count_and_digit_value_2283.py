@@ -23,3 +23,6 @@ print(f"{num = } {sol.digitCount(num) = }")
 
 num = "1210"
 print(f"{num = } {sol.digitCount(num) = }")
+
+num = "1230"
+print(f"{num = } {sol.digitCount(num) = }")
