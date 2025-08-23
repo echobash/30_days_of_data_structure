@@ -6,7 +6,6 @@ class Solution:
         if word.isupper() or word.isupper():
             return True
 
-        n = len(word)
         for i, char in enumerate(word):
             if char.isupper() and i != 0:
                 return False
