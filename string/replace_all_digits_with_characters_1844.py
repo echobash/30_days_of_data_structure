@@ -24,3 +24,6 @@ print(f"{s = }  {sol.replaceDigits(s) = }")
 
 s = "a1b2c3d4"
 print(f"{s = }  {sol.replaceDigits(s) = }")
+
+s = "a1"
+print(f"{s = }  {sol.replaceDigits(s) = }")
