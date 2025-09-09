@@ -23,5 +23,8 @@ print(f"{s = } {sol.frequencySort(s) = }")
 s = "cccaaa"
 print(f"{s = } {sol.frequencySort(s) = }")
 
+s = "cccaddaaad"
+print(f"{s = } {sol.frequencySort(s) = }")
+
 s = "Aabb"
 print(f"{s = } {sol.frequencySort(s) = }")
