@@ -25,5 +25,8 @@ print(f"{s = } {sol.maxFreqSum(s) = }")
 s = "education"
 print(f"{s = } {sol.maxFreqSum(s) = }")
 
+s = "bcdfqhjklm"
+print(f"{s = } {sol.maxFreqSum(s) = }")
+
 s = "aeiaeia"
 print(f"{s = } {sol.maxFreqSum(s) = }")
