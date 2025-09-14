@@ -22,3 +22,6 @@ print(f"{nums = } {sol.singleNumber(nums) = }")
 
 nums = [0,1]
 print(f"{nums = } {sol.singleNumber(nums) = }")
+
+nums = [0,1,4,4,2,3,2,3]
+print(f"{nums = } {sol.singleNumber(nums) = }")
