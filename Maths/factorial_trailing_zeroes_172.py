@@ -24,5 +24,8 @@ print(f"{n = } | {sol.trailingZeroes(n) = }")
 n = 14
 print(f"{n = } | {sol.trailingZeroes(n) = }")
 
+n = 11
+print(f"{n = } | {sol.trailingZeroes(n) = }")
+
 n = 15
 print(f"{n = } | {sol.trailingZeroes(n) = }")
