@@ -16,11 +16,14 @@ encoded = [1,2,3]
 first = 1
 print(f" {encoded = } | {first = } | {sol.decode(encoded, first) = }")
 
-
 encoded = [6,2,7,3]
 first = 4
 print(f" {encoded = } | {first = } | {sol.decode(encoded, first) = }")
 
 encoded = [6,2,7,3]
 first = 2
+print(f" {encoded = } | {first = } | {sol.decode(encoded, first) = }")
+
+encoded = [6,6,6,6]
+first = 6
 print(f" {encoded = } | {first = } | {sol.decode(encoded, first) = }")
