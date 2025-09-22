@@ -20,3 +20,7 @@ print(f" {encoded = } | {first = } | {sol.decode(encoded, first) = }")
 encoded = [6,2,7,3]
 first = 4
 print(f" {encoded = } | {first = } | {sol.decode(encoded, first) = }")
+
+encoded = [6,2,7,3]
+first = 2
+print(f" {encoded = } | {first = } | {sol.decode(encoded, first) = }")
