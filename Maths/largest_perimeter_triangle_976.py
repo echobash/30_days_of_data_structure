@@ -38,3 +38,7 @@ print(f"{n = } | {sol.largestPerimeter(n) = }")
 
 n = [1, 2, 1, 13]
 print(f"{n = } | {sol.largestPerimeter(n) = }")
+
+
+n = [1, 1, 1, 2, 2, 2, 3, 3, 3]
+print(f"{n = } | {sol.largestPerimeter(n) = }")
