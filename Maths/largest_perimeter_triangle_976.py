@@ -32,3 +32,6 @@ print(f"{n = } | {sol.largestPerimeter(n) = }")
 
 n = [10, 15, 7, 6, 5]
 print(f"{n = } | {sol.largestPerimeter(n) = }")
+
+n = [3, 2, 3, 4]
+print(f"{n = } | {sol.largestPerimeter(n) = }")
