@@ -24,3 +24,6 @@ print(f"{words = } {sol.removeAnagrams(words) = }")
 
 words = ["a","b","c","d","e"]
 print(f"{words = } {sol.removeAnagrams(words) = }")
+
+words = ["a","b","cc","dd","ee","ff"]
+print(f"{words = } {sol.removeAnagrams(words) = }")
