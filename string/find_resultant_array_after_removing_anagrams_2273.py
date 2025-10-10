@@ -16,6 +16,8 @@ sol = Solution()
 words = ["abba","baba","bbaa","cd","cd"]
 print(f"{words = } {sol.removeAnagrams(words) = }")
 
-
 words = ["abba","baba","bbaa","cd"]
+print(f"{words = } {sol.removeAnagrams(words) = }")
+
+words = ["a","b","a"]
 print(f"{words = } {sol.removeAnagrams(words) = }")
