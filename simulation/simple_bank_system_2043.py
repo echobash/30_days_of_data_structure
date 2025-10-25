@@ -35,6 +35,8 @@ class Bank:
         self.balance[account - 1] -= money
         return True
 
+# opereations = ["Bank","withdraw","transfer","deposit","transfer","withdraw"]
+# data = [[[10, 100, 20, 50, 30]], [3, 10], [5, 1, 20], [5, 20], [3, 4, 15], [10, 50]]
 
 
 
