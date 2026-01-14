@@ -27,6 +27,9 @@ print(arr, sol.validMountainArray(arr))
 arr = [0,3,2,1]
 print(arr, sol.validMountainArray(arr))
 
+arr = [0,13,2,1]
+print(arr, sol.validMountainArray(arr))
+
 arr =[0,2,3,3,5,2,1,0]
 print(arr, sol.validMountainArray(arr))
 
