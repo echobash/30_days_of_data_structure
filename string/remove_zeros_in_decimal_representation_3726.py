@@ -15,3 +15,6 @@ print(f"{n = } {sol.removeZeros(n) = }")
 
 n = 1
 print(f"{n = } {sol.removeZeros(n) = }")
+
+n = 19
+print(f"{n = } {sol.removeZeros(n) = }")
