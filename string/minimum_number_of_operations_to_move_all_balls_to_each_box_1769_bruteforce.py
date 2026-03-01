@@ -38,3 +38,6 @@ sol = Solution()
 
 boxes = "110"
 print(f"{boxes = } {sol.minOperations(boxes) = }")
+
+boxes = "111"
+print(f"{boxes = } {sol.minOperations(boxes) = }")
