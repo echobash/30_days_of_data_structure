@@ -1,4 +1,5 @@
 # Python Practice Playground ✨
+![Uploading images.jpeg…]()
 
 Welcome! This repository is my personal collection of Python code, focusing on algorithms, data structures, Object-Oriented Programming (OOP), Low-Level Design (LLD), and solutions to various coding challenges (primarily LeetCode). It serves as a space for learning, practice, and demonstrating problem-solving approaches.
 
